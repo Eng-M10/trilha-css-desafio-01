@@ -19,9 +19,10 @@ body {
 }
 
 header {
-font-family: 'Raleway';
-background-image:  linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)),
-    url("../assets/images/banner.png");
+
+background-image:  linear-gradient(rgba(0, 0, 0, .6) , rgba(49, 168, 221, .2) , rgba(0, 0, 0, .6) ),
+    url('../images/banner.png');
+opacity: calc(100%-webkit-background-clip);
 padding: 50px;
 background-size: cover;
 background-position: center;
@@ -97,7 +98,6 @@ height: 605px;
 
 /*main content*/
 main {
-    text-align: center;
     padding: 20px;
 
 }
@@ -116,6 +116,8 @@ h2{
 }
 
 #course-content{
+
+
     display: flex;
 
     flex-direction: column;
@@ -128,6 +130,8 @@ h2{
     margin-left: 50%;
     transform: translateX(-50%);
     margin-bottom: 50px;
+
+    padding: 100px 0px;
 }
 
 
@@ -138,37 +142,174 @@ h2{
     letter-spacing: 19%;
     font-weight: lighter;
 
+    margin-top: 16px;
+
 }
 
 
 #course-content .modules-list{
-display: flex;
 
+display: flex;
 flex-direction: column;
 justify-content: space-between;
+
+
 }
 
-.modules-list div{
+.module{
     align-self: flex-start;
     width: 535px;
     margin-top: 20px;
-    padding: 12px;
+    padding: 12px 12px;
     background-color: #252525;
-    /*border-image:  linear-gradient(180deg, #33A8DB 0%, #1472B7 100%) 1;*/
+    
     box-sizing: border-box;
 
-    border: 1px solid #33A8DB; /* Cor da borda azul */
-    border-radius: 57px; /* Raio da borda arredondada */
+    border: 1px solid #33A8DB; 
+    border-radius: 57px; 
 
     box-shadow: -2px 6px 4px 0px #29262666 inset;
 
 }
 
-.modules-list div:hover{
+.module:hover{
 
     box-shadow: -2px 6px 4px 0px #e7e4e48e inset;
 }
 
-.modules-list div span {
+.module span {
     color: #33A8DB;
+}
+
+
+#transform-world{
+
+    width: 1440px;
+    height: 363px;
+
+    background-image: url('../images/woman-code.png');
+    background-size: cover;
+    background-position: center;
+
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+
+    border-bottom: solid #1472B7;
+    border-top: solid #1472B7;
+
+    margin: 110px 0px;
+
+ 
+}
+
+#transform-world h2{
+    width: 746px;
+    height: 76px;
+    font-weight: 700;
+    line-height: 76px;
+    letter-spacing: 19%;
+
+}
+
+#transform-world p{
+
+ 
+    text-transform: lowercase;
+    width: 244px;
+    height: 141px;
+    margin-top: 111px;
+    margin-left: 198px;
+
+    font-size: 40px;
+    font-weight: lighter;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffff;
+
+    text-shadow: 3px 2px 0px #33a9dbf1;
+
+
+    
+
+}
+
+
+#professional-challenges{
+    height: 363px;
+    border: 1px, 1px, 1px, 0px;
+    margin-bottom: 170px;
+    padding: 50px;
+    text-align: center;
+}
+
+#professional-challenges p {
+
+    font-size: 16px;
+    
+    font-weight: lighter;
+
+    line-height: 19px;
+    letter-spacing: 0em;
+
+    
+    width: fit-content;
+    height: 76px;
+
+    margin-top: 21px ;
+
+    margin-left: 50%;
+
+    transform: translateX(-50%);
+
+
+    
+}
+
+
+/*footer*/
+
+footer {
+    height: 170px;
+    width: 1440px;
+    text-align: center;
+    justify-content: space-between;
+    border-top: 1px solid #33A8DB;
+    background-image: linear-gradient(180deg,rgba(51, 168, 219, 0) 0%, rgba(51, 168, 219, 0.2) 99.99%, rgba(51, 168, 219, 0.2) 100%);
+
+    margin-top: 50px;
+
+}
+
+footer img {
+
+    width: 310px;
+    height: 44px;
+    margin-top: 59px;
+
+}
+
+footer p {
+    padding: 16px;
+    font-size: 16px;
+    font-weight: lighter;
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+footer p a {
+
+    text-decoration: none;
+    color: gold;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
+
+footer p a:hover{
+    padding-top: 2px;
+    color: #1472B7;
 }
